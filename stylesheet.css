@@ -1,0 +1,164 @@
+@charset "UTF-8";
+
+html {
+    font-size: 100%
+}
+
+body {
+    font-family: "YU Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", sans-serif;
+    line-height: 1.7;
+    color: #000;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+/*header*/
+
+header {
+    align-items: center;
+}
+
+h1 {
+    color: #000;
+}
+
+.main-nav {
+    display: flex;
+    font-size: 1.25rem;
+    list-style: none;
+}
+
+.main-nav li {
+    margin-left: 32px;
+}
+
+.main-nav a {
+    color: #ff006f;
+}
+
+.main-nav a:hover {
+    color: #000;
+}
+
+.page-header {
+    display: flex;
+}
+
+.wrapper {
+    max-width: 1280px;
+    margin: 0 auto;
+
+    /*スマホ向けの余白指定*/
+    padding: 0 2%;
+}
+
+/*home*/
+.home-content {
+    text-align: left;
+    margin-top: 250px;
+}
+
+.home-content p {
+    font-size: 1.125rem;
+    margin: 16px 0 42px;
+}
+
+/* Gallery
+------------------------------- */
+.big-background {
+    background-image: url(../images/ファーストビュー.png);
+    height: 800px;
+    background-size: cover;
+    background-position: center top;
+}
+
+.gallery-content {
+    margin-top: 10%;
+}
+
+
+.gallery-content p {
+    color:rgb(28, 26, 26);
+    font-size: 1.125rem;
+    margin: 10px 0 0;
+    text-align: left;
+}
+
+.item a {
+    color: #000;
+}
+
+/*見出し*/
+.page-title {
+    color: rgb(28, 26, 26);
+    font-size: 6rem;
+    font-family: "源/角ゴシック", Gothic;
+    font-weight: normal;
+    text-align: left;
+}
+
+.grid {
+    display: grid;
+    gap: 24px;
+    grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
+    margin: 4%;
+}
+
+.big-box {
+    grid-column: 1/3;
+    grid-row: 1/3;
+}
+
+.big-box img {
+    height: 94%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/*フッター*/
+footer {
+    background: #000;
+    text-align: center;
+    padding: 24px 0;
+}
+footer p {
+    color: #fff;
+    font-size: 0.875rem;
+}
+
+/*モバイル版*/
+@media (max-width:600px) {
+    .page-title {
+        font-size:2.5rem;
+    }
+    .page-header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /*ヘッダー*/
+    .main-nav {
+        font-size: 1rem;
+        margin-top: 12px;
+    }
+
+    .main-nav li {
+        margin: 0px 20px;
+    }
+
+    /*ホーム*/
+    .home-content {
+        margin-top: 20%;
+    }
+
+    /*ギャラリー*/
+    .gallery-content {
+        margin-top: 20%;
+    }
+}
